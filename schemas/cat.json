@@ -1,0 +1,41 @@
+{
+  "id": "my.network/cat",
+  "title": "Cat",
+  "description": "A social media cat item to cuddle and care for",
+  "type": "json-table",
+  "keyTemplate": [{"type": "auto"}],
+  "definition": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "required": ["name", "createdAt", "updatedAt"],
+    "additionalProperties": true,
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "creator": {
+        "type": "object",
+        "required": ["dbUrl", "userId"],
+        "additionalProperties": false,
+        "properties": {
+          "dbUrl": {
+            "type": "string",
+            "format": "uri"
+          },
+          "userId": {
+            "type": "string",
+            "pattern": ".+@.+"
+          }
+        }
+      },
+      "createdAt": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "updatedAt": {
+        "type": "string",
+        "format": "date-time"
+      }
+    }
+  }
+}

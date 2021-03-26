@@ -1,0 +1,33 @@
+{
+  "name": "ctzn-server-plugin-example",
+  "version": "0.0.1",
+  "description": "Example server plugin for ctzn",
+  "main": "index.js",
+  "type": "module",
+  "bin": "bin.js",
+  "scripts": {
+    "test": "ava -s --timeout=2m"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saimonmoore/ctzn-server-plugin-example.git"
+  },
+  "author": "Saimon Moore <saimon@saimonmoore.org>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saimonmoore/ctzn-server-plugin-example/issues"
+  },
+  "homepage": "https://github.com/saimonmoore/ctzn-server-plugin-example#readme",
+  "dependencies": {
+    "hyperbee": "^1.5.0",
+    "hyperspace": "^3.18.1",
+    "uuid": "^8.3.2",
+    "monotonic-lexicographic-timestamp": "^1.0.0",
+    "subcommand": "^2.1.1",
+    "ctzn": "0.21.1"
+  },
+  "devDependencies": {
+    "ava": "^3.15.0",
+    "tmp-promise": "^3.0.2"
+  }
+}
